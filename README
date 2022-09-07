@@ -1,0 +1,30 @@
+NAME: Cao Xu
+EMAIL: cxcharlie@gmail.com
+ID: 704551688
+
+INCLUDED FILES:
+
+lab4c_tcp.c: Source file TCP connection for temperature detection in the beaglebone. Added
+3 new commands --host, --id, and --log (which is now mandatory) as well as the
+necessary port number positional argument. Much of it is implemented on lab4b
+
+lab4c_tls.c: Source file for SSL connection implemented over the previous lab4c_tcp. 
+
+README: This file which describes the four files and miscellaneous comments
+
+Makefile: The makefile for this project. A standard makefile except that it checks
+whether or not uname -a has "armv7l" to determine whether or not to include
+the dummy thing. 
+
+Limitations/Relevant Comments:
+It should be noted that my AIO failed to initalize for my temperature sensor on my
+beaglebone and as a result, I had to use the dummy options to run on my end. I use uname -a
+and searching for armv7l
+
+Research:
+
+DISCUSSION SLIDES! Especially for the second part, I pretty much copy and pasted from the slides
+and did some editing for error codes.
+
+I also had some issue with Sublime Text and transferring tabs/spaces to VIM and had to google that
+
